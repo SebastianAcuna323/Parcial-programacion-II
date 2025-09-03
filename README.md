@@ -9,4 +9,4 @@
   **Metodo:** Siguiendo con el tema de vender libros si esto se pudiera agregar se podria inclui un metodo para actualizar el precio de los libros.
 
   # Diagrama UML
-  
+  ![alt text](https://raw.githubusercontent.com/SebastianAcuna323/Parcial-programacion-II/refs/heads/main/src/Diagrama%20sin%20t%C3%ADtulo.drawio.png)
