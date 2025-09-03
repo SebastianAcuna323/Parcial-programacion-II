@@ -78,6 +78,13 @@ public boolean devolucion (){
 
 }
 
+ public Libro() {
+        this.titulo = "";
+        this.Autor = "";
+        this.numeroEjemplares = 0;
+        this.numeroEjemplaresPrestados = 0;
+    }
+
 
 public void imprimir(){
 
