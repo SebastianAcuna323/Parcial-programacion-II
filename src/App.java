@@ -4,7 +4,7 @@ public class App {
 
     System.out.println("*** INICIANDO PRUEBA ***");
     
-        Libro libro1 = new Libro("El principito", "Antoine de Saint-Exupéry", 0, 0);
+        Libro libro1 = new Libro("El principito", "Antoine de Saint-Exupéry", 2, 0);
         
         Libro libro2 = new Libro();
 
@@ -17,7 +17,7 @@ public class App {
         }
 
        System.out.println("-------------------------------------");
-        System.out.println("prueba devolucion");
+        System.out.println("-------PRUEBA DEVOLUCION------");
         if (libro1.devolucion()) {
             System.out.println("Se devolvio el libro correctamente");
             
