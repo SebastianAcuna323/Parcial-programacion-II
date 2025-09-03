@@ -6,7 +6,7 @@ public class Libro {
     private int numeroEjemplaresPrestados = 0;
 
     
-    private Libro(String titulo, String autor) {
+    public Libro(String titulo, String autor) {
         this.titulo = titulo;
         Autor = autor;
     }
@@ -51,7 +51,39 @@ public class Libro {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
+public boolean prestamo (){
     
+if (numeroEjemplaresPrestados<numeroEjemplares) {
+    numeroEjemplaresPrestados++;
+    return true;
+} else {
+    return false;
+}
+
+}    
+
+public boolean devolucion (){
+    if (numeroEjemplaresPrestados>0) {
+        numeroEjemplaresPrestados--;
+        return true;
+    
+    } else {
+        return false;    
+    }
+
+
+}
+
+
+public void imprimir(){
+
+System.out.println("Libro: "+ titulo);
+System.out.println("Autor: " + Autor);
+System.out.println("Ejemplares totales: "+ numeroEjemplares);
+System.out.println("Ejemplares prestados" + numeroEjemplaresPrestados);
+
+
+}
 
 
     
