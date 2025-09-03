@@ -2,8 +2,8 @@ public class Libro {
 
     private String titulo;
     private String Autor;
-    private int numeroEjemplares = 0;
-    private int numeroEjemplaresPrestados = 0;
+    private int numeroEjemplares = 8;
+    private int numeroEjemplaresPrestados = 2;
 
     
     public Libro(String titulo, String autor) {
@@ -80,9 +80,15 @@ public void imprimir(){
 System.out.println("Libro: "+ titulo);
 System.out.println("Autor: " + Autor);
 System.out.println("Ejemplares totales: "+ numeroEjemplares);
-System.out.println("Ejemplares prestados" + numeroEjemplaresPrestados);
+System.out.println("Ejemplares prestados: " + numeroEjemplaresPrestados);
 
 
+}
+
+public Libro(){
+this("", "");
+this.numeroEjemplares=0;    
+this.numeroEjemplaresPrestados=0;
 }
 
 

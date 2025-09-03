@@ -5,6 +5,12 @@ public class App {
     System.out.println("*** INICIANDO PRUEBA ***");
     
         Libro libro1 = new Libro("El principito", "Antoine de Saint-Exupéry");
+        Libro libro2 = new Libro();
+
+        libro2.imprimir();
+        libro1.imprimir();
+
+
 
 
 }
