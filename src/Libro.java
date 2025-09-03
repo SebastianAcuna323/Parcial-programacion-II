@@ -2,13 +2,17 @@ public class Libro {
 
     private String titulo;
     private String Autor;
-    private int numeroEjemplares = 8;
+    private int numeroEjemplares;
     private int numeroEjemplaresPrestados = 2;
 
     
-    public Libro(String titulo, String autor) {
+  
+
+    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados) {
         this.titulo = titulo;
         Autor = autor;
+        this.numeroEjemplares = numeroEjemplares;
+        this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
 
@@ -63,12 +67,12 @@ if (numeroEjemplaresPrestados<numeroEjemplares) {
 }    
 
 public boolean devolucion (){
-    if (numeroEjemplaresPrestados>0) {
+    if (numeroEjemplaresPrestados==0) {
         numeroEjemplaresPrestados--;
-        return true;
+        return false;
     
     } else {
-        return false;    
+        return true;    
     }
 
 
@@ -85,11 +89,9 @@ System.out.println("Ejemplares prestados: " + numeroEjemplaresPrestados);
 
 }
 
-public Libro(){
-this("", "");
-this.numeroEjemplares=0;    
-this.numeroEjemplaresPrestados=0;
-}
+
+
+
 
 
     

@@ -4,10 +4,27 @@ public class App {
 
     System.out.println("*** INICIANDO PRUEBA ***");
     
-        Libro libro1 = new Libro("El principito", "Antoine de Saint-Exupéry");
-        Libro libro2 = new Libro();
+        Libro libro1 = new Libro("El principito", "Antoine de Saint-Exupéry", 0, 1);
+        
 
-        libro2.imprimir();
+        System.out.println("prueba prestamo");
+        if (libro1.prestamo()) {
+            System.out.println("Se presto correctamente el libro campeon");
+            
+        } else {
+                    System.out.println("No se pudo prestar");
+        }
+
+        System.out.println("prueba devolucion");
+        if (libro1.devolucion()) {
+            System.out.println("Se devolvio el libro campeon");
+            
+        } else {
+                    System.out.println("No se pudo devolver");
+        }
+
+
+        
         libro1.imprimir();
 
 
